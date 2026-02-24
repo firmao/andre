@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre Valdestilhas | Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            line-height: 1.7;
+        }
+
+        /* Menu Lateral */
+        nav {
+            width: 280px;
+            background-color: var(--primary);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding: 40px 25px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .nav-header h1 { font-size: 1.4rem; margin: 0; font-weight: 700; color: #f8fafc; }
+        .nav-header p { font-size: 0.8rem; color: #94a3b8; margin: 5px 0 30px; }
+
+        nav ul { list-style: none; padding: 0; }
+        nav li { margin-bottom: 12px; }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: 0.2s;
+            display: block;
+            padding: 5px 0;
+        }
+        nav a:hover { color: white; padding-left: 5px; }
+
+        /* Conteúdo */
+        main {
+            margin-left: 280px;
+            padding: 60px 5%;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        section { margin-bottom: 50px; }
+        h2 { 
+            font-size: 1.1rem; 
+            text-transform: uppercase; 
+            letter-spacing: 0.1em; 
+            color: var(--accent); 
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid var(--border);
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-item {
+            text-align: center;
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .metric-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); display: block; }
+        .metric-label { font-size: 0.7rem; text-transform: uppercase; color: var(--text-light); }
+
+        .entry { margin-bottom: 30px; }
+        .entry-title { font-weight: 700; font-size: 1.1rem; color: var(--primary); margin: 0; }
+        .entry-subtitle { color: var(--accent); font-size: 0.9rem; font-weight: 600; display: block; margin-bottom: 8px; }
+        .entry-details { font-size: 0.95rem; margin-top: 5px; }
+
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin: 4px 2px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 850px) {
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: static; }
+            main { margin-left: 0; padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-header">
+        <h1>Andre Valdestilhas</h1>
+        <p>Pesquisador Pós-Doc em Web Semântica</p>
+    </div>
+    <ul>
+        <li><a href="#sumario">Sumário Profissional</a></li>
+        <li><a href="#ensino">Experiência de Magistério</a></li>
+        <li><a href="#orientacao">Orientação de Alunos</a></li>
+        <li><a href="#producao">Produção Científica</a></li>
+        <li><a href="#publicacoes">Publicações Recentes</a></li>
+        <li><a href="#projetos">Projetos de Pesquisa</a></li>
+        <li><a href="#experiencia">Experiência Profissional</a></li>
+        <li><a href="#formacao">Formação Acadêmica</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="sumario">
+		<h1>Andre Valdestilhas | Curriculum Vitae</h1>
+        <h2>Sumário</h2>
+        <div class="card">
+            <p>Pesquisador em ciência da computação desde 2004. Especialista na aplicação de tecnologias da web semântica e grandes modelos de linguagem (LLMs) à pesquisa em ciência dos materiais, ciências sociais e humanidades. Histórico comprovado na publicação de pesquisas e vasta experiência em organização de eventos internacionais (ICWI, ESWC, ISWC) e atuação no <em>The Semantic Web Journal</em>. Criador do workshop científico <strong><a href=https://sites.google.com/view/semats2026>SeMats</a></strong>.</p>
+        </div>
+    </section>
+
+    <section id="ensino">
+        <h2>Experiência de Magistério</h2>
+        <div class="card">
+            <div class="entry">
+                <span class="entry-subtitle">Nov 2020 — Abr 2021 | Leipzig Univ. of Applied Sciences (HTWK)</span>
+                <p class="entry-title">Professor (Meio Período)</p>
+                <p class="entry-details">Ministrou aulas sobre Arquitetura de Computadores, Sistemas Numéricos, Algoritmos, Estruturas de Dados, Compiladores, Lógica Booleana, Big Data, Web Semântica e Sistemas Distribuídos.</p>
+            </div>
+            <div class="entry">
+                <span class="entry-subtitle">Ago 2011 — Set 2014 | Universidade Anhanguera, Brasil</span>
+                <p class="entry-title">Professor Assistente</p>
+                <p class="entry-details">Tópicos: Estruturas de Dados e Algoritmos, Metodologia Científica, Bancos de Dados, Teste de Software e Estatística.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="orientacao">
+        <h2>Orientação de Alunos (VU Amsterdam)</h2>
+        <div class="card">
+            <p><strong>Orientações Atuais:</strong></p>
+            <ul>
+                <li>Luc van Remmerden: Previsão de links em Ciências Sociais e Humanas.</li>
+                <li>Ari Ionescu: Desafios na adaptação dos princípios FAIR.</li>
+                <li>Mir Eldar Mövsum-Zada: Alinhamento de ontologias para conjuntos de dados de SSH.</li>
+                <li>Bomiao Wang: Avaliação e seleção de repositórios de ontologias.</li>
+            </ul>
+            <p><strong>Coorientação (Bacharelado):</strong> Anna Riera Garriga, Aryan Kheskani Raisinghani, Avantika Verma e Gonzalo Lantero Cereceda.</p>
+        </div>
+    </section>
+
+    <section id="producao">
+        <h2>Produção Científica e Técnica</h2>
+        <div class="card">
+            <p>Desenvolvimento de soluções na aplicando IA e Web Semântica:</p>
+            <ul>
+                <li><strong>MatPortal.org:</strong> Repositório central de ontologias para ciência de materiais.</li>
+                <li><strong>MatVis:</strong> Framework para visualização de métodos de engenharia e grafos RDF.</li>
+                <li><strong>VOCEDITOR:</strong> Ambiente para edição e validação de vocabulários RDF.</li>
+                <li><strong>OpenBISmantic:</strong> Framework para gestão de metadados em ciência de materiais.</li>
+				<li><strong>SSHOC-NL KG:</strong> A Knowledge Graph for Social Sciences and Humanities.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="publicacoes">
+        <h2>Publicações Selecionadas (2020-2025)</h2>
+        <div class="card">
+            <div class="entry">
+                <p class="entry-details"><strong>2025:</strong> LLM-driven multi-agent inspection planning via semantically enriched knowledge graphs (ISWC/SEMATS).</p>
+                <p class="entry-details"><strong>2025:</strong> Sshoc-nl kg: Towards a knowledge graph for social sciences and humanities (ISWC).</p>
+                <p class="entry-details"><strong>2023:</strong> The intersection between Semantic Web and materials science (Advanced Intelligent Systems).</p>
+                <p class="entry-details"><strong>2021:</strong> SANTE: Semantic search framework for RDF data (ESWC).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos de Pesquisa</h2>
+        <div class="card">
+            <div class="entry">
+                <p class="entry-title">SSHOC-NL</p>
+                <p class="entry-details">Focado na criação de infraestruturas de dados para Ciências Sociais e Humanidades na Holanda.</p>
+            </div>
+            <div class="entry">
+                <p class="entry-title">Mat-o-Lab</p>
+                <p class="entry-details">Projetos voltados à digitalização da ciência dos materiais, integrando ontologias e grafos de conhecimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiência Profissional Recente</h2>
+        <div class="card">
+            <div class="entry">
+                <span class="entry-subtitle">Ago 2021 — Set 2024 | BAM, Alemanha</span>
+                <p class="entry-title">Pesquisador / Pós-Doutorando</p>
+                <p class="entry-details">Pesquisas aplicando Semantic Web e Large Language Models (LLMs) a ciencia e engenharia de materiais em consulta de dados semânticos e visualização.</p>
+            </div>
+            <div class="entry">
+                <span class="entry-subtitle">Mar 2020 — Dez 2020 | InfAl - Universität Leipzig</span>
+                <p class="entry-title">Engenheiro de Software</p>
+                <p class="entry-details">Projetos: Rede Parkinson (Panos), PlatonaM e Telepark.</p>
+                <div style="margin-top:10px;">
+                    <span class="tag">Java</span><span class="tag">Kotlin</span><span class="tag">React</span>
+                    <span class="tag">SpringBoot</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
+                    <span class="tag">VUE JS</span><span class="tag">RDF</span><span class="tag">SHACL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+        <div class="card">
+            <div class="entry">
+                <p class="entry-title">Doutorado em Ciência da Computação</p>
+                <span class="entry-subtitle">Universität Leipzig, Alemanha | 2021</span>
+                <p class="entry-details">Tese: Identifying, Relating, Consisting, and Querying Large Heterogeneous RDF Sources.</p>
+            </div>
+            <div class="entry">
+                <p class="entry-title">Mestrado em Eng. Eletrônica e de Computação</p>
+                <span class="entry-subtitle">ITA - Instituto Tecnológico de Aeronáutica | 2009</span>
+                <p class="entry-details">Dissertação: CossackIDE: Ambiente para desenvolvimento e execução de Hiperprogramas.</p>
+            </div>
+            <div class="entry">
+                <p class="entry-title">Bacharelado em Ciência da Computação</p>
+                <span class="entry-subtitle">Universidade do Grande ABC | 2003</span>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; color: var(--text-light); font-size: 0.8rem; margin-top: 50px;">
+        <p><a href=https://scholar.google.com/citations?user=hAaotcUAAAAJ>Google Scholar: user=hAaotcUAAAAJ</a> | <a href=https://orcid.org/0000-0002-0079-2533>ORCID: 0000-0002-0079-2533</a></p>
+        <p><a href=http://lattes.cnpq.br/9893245203357826>Lattes: http://lattes.cnpq.br/9893245203357826</a></p>
+    </footer>
+</main>
+
+</body>
+</html>
